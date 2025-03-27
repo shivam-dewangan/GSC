@@ -1,0 +1,408 @@
+/* 🔹 Home Page Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url('https://c1.wallpaperflare.com/preview/458/69/207/india-labourer-worker-labour-working-delhi.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+/* 🔹 Main Home Container */
+/* 🔹 Main Full-Screen Background */
+.home-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none; /* Keep transparent */
+}
+
+/* 🔹 Black Blur Effect Box */
+.home-box {
+  background: rgba(0, 0, 0, 0.5); /* Pure black with transparency */
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(15px);
+  text-align: center;
+  width: 40%;  /* Reduced Width */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+}
+
+/* 🔹 Heading - Neon Glow */
+.home-box h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0ff; /* Cyan Neon */
+  text-shadow: 0px 0px 12px rgba(0, 255, 255, 0.8);
+}
+
+/* 🔹 Paragraph - White Text */
+.home-box p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+/* 🔹 Buttons */
+.home-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.home-buttons a {
+  background: #0ff;
+  color: #000;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+  border: 2px solid #0ff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.home-buttons a:hover {
+  background: black;
+  color: #0ff;
+  border: 2px solid #0ff;
+  transform: scale(1.05);
+}
+
+
+
+/* 🔹 Employer Dashboard Styling */
+.employer-dashboard {
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #0d0d0d;
+  color: #00ffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  text-align: center;
+}
+
+.employer-dashboard h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.7);
+}
+
+.employer-dashboard p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+/* 🔹 Employer Dashboard Styling */
+.employer-dashboard {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #111;
+  color: #0ff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  text-align: center;
+}
+
+/* 🔹 Form Inputs */
+.employer-dashboard form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.employer-dashboard input {
+  padding: 12px;
+  border: 1px solid #0ff;
+  background: #222;
+  color: #0ff;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.employer-dashboard input:focus {
+  outline: none;
+  border-color: #00bcd4;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+/* 🔹 Submit Button */
+.employer-dashboard button {
+  padding: 12px;
+  background: #0ff;
+  color: #000;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.employer-dashboard button:hover {
+  background: #00bcd4;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* 🔹 Posted Jobs List */
+.employer-dashboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.employer-dashboard li {
+  background: #222;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border-left: 4px solid #0ff;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.employer-dashboard li strong {
+  color: #0ff;
+}
+/* 🔹 Job Matching System Container */
+.job-matching {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #111;
+  color: #0ff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  text-align: center;
+}
+
+/* 🔹 Job Card Styling */
+.job-card {
+  background: #222;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  text-align: left;
+  border-left: 4px solid #0ff;
+}
+
+.job-card h3 {
+  color: #00bcd4;
+  margin-bottom: 5px;
+}
+
+.job-card p {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Matched Laborers List */
+.job-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.job-card li {
+  background: #333;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #0ff;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+/* 🔹 No Laborers Found Message */
+.job-card p {
+  font-size: 0.9rem;
+  color: #ff4444;
+  font-style: italic;
+}
+/* 🔹 Laborer Dashboard Container */
+.laborer-dashboard {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #111;
+  color: #0ff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  text-align: center;
+}
+
+/* 🔹 Job List Styling */
+.laborer-dashboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.laborer-dashboard li {
+  background: #222;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  text-align: left;
+  border-left: 4px solid #0ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 🔹 Job Title Styling */
+.laborer-dashboard li strong {
+  color: #00bcd4;
+  font-size: 1.1rem;
+}
+
+/* 🔹 Apply Button Styling */
+.laborer-dashboard button {
+  background: #00bcd4;
+  color: black;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.laborer-dashboard button:hover {
+  background: #008ba3;
+}
+
+.laborer-dashboard button:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+/* 🔹 Register Laborer Form Container */
+.register-laborer {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #111;
+  color: #0ff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  text-align: center;
+}
+
+/* 🔹 Form Labels */
+.register-laborer label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: left;
+  color: #00bcd4;
+}
+
+/* 🔹 Form Inputs */
+.register-laborer input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: none;
+  border-radius: 5px;
+  background: #222;
+  color: #0ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+/* 🔹 Input Focus Effect */
+.register-laborer input:focus {
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+/* 🔹 Register Button */
+.register-laborer button {
+  background: #00bcd4;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.register-laborer button:hover {
+  background: #008ba3;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+/* 🔹 Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #222;  /* Dark background */
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+}
+
+/* 🔹 Navbar Title */
+.navbar h2 {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: cyan;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+}
+
+/* 🔹 Navbar Links */
+.navbar div {
+  display: flex;
+  gap: 30px;  /* This ensures proper spacing between links */
+}
+
+/* 🔹 Link Styling */
+.navbar a {
+  text-decoration: none;
+  color: cyan;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🔹 Hover Effect */
+.navbar a:hover {
+  background: rgba(0, 255, 255, 0.1);
+  text-shadow: 0 0 10px cyan;
+  transform: scale(1.1);
+}
+
+/* 🔹 Responsive Design (Mobile View) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .navbar div {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .navbar a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
